@@ -20,13 +20,22 @@ var generateFortuneCookie = function() {
         // 3. Select the `#previous-fortunes-container` container and use
         //    `appendChild()` to append the new `li` element you created above.
         // 4. You should see the previous fortune cookie saying show up in the list.
+	
+	var getFortune = document.getElementById("fortune-cookie-text");
+	var newList = document.createElement("LI");
+	newList.innerHTML=getFortune;
+	var previousFortune = document.getElementById("previous-fortunes-container").appendChild(newList);
 
     // TODO: Select a new (random) fortune cookie saying from the data stored in the
     // `fortunesList` variable. (HINT: You will use `Math.floor()` and
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
+	var randomFortune = fortunesList[Math.floor(Math.random() * fortunesList.length)];
+	//var displayRandomFortune = fortunesList[randomFortune];
+	getFortune.innerHTML = randomFortune;
+	previousFortune.innerHTML = randomFortune;
 
-}
+};
 
 // The following data list is provided for you to use in your code.
 var fortunesList = [
@@ -81,4 +90,4 @@ var fortunesList = [
     "You will conquer obstacles to achieve success.",
     "Joys are often the shadows, cast by sorrows.",
     "Fortune favors the brave."
-]
+];

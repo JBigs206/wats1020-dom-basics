@@ -6,8 +6,49 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.heading{
+	background-image: url("papyrus.png");
+	width: 600px;
+	height: 120px;
+	margin-left:auto;
+	margin-right:auto;
+	background-repeat: no-repeat;
+    background-position: center;
+	padding-top: 0.5px;
+}
+
 .fortune-cookie-saying-wrapper {
-    border: 1px solid #666;
+    /*border: 1px solid #666;*/
     padding: 1em;
     margin: 1em;
+}
+
+body {
+	background-image: url("writing.jpg");
+	color: white;
+	/*color: #CF5300;*/
+}
+
+/*title, p, h1, h2 {
+	background-color: white; 
+	
+}*/
+
+.fortune-cookie-saying-wrapper{
+	position: relative;
+	width: 500px;
+	height:150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("fortune.png");
+	background-repeat: no-repeat;
+    background-position: center;	
+}
+#fortune-cookie-text{
+	
+	position: absolute;
+    left: 180px;
+	top: 50px;
+	color: red;
+	font-size: 12px;
 }

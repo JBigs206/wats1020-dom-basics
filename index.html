@@ -11,16 +11,18 @@
         <script type="text/javascript" src="fortune-cookie-generator.js"></script>
     </head>
     <body>
+		<div class ="heading">
         <h1>Fortune Cookie Generator</h1>
         <p>Use this page to generate fortune cookie sayings.</p>
+		</div>	
         <div class="fortune-cookie-saying-wrapper">
-            <p id="fortune-cookie-text">Click the button to generate a saying.</p>
+            <p id="fortune-cookie-text">Click on the cookie below to generate a saying.</p>
         </div>
         <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
-        <button class="generate-button">
-            Make My Fortune!
-        </button>
-        <hr>
+        <img src="cookie.png" width="100" height="100" onclick="generateFortuneCookie()" class="generate-button">
+            
+        </>
+        
         <h2>Previous Fortunes</h2>
         <ul id="previous-fortunes-container">
         <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
