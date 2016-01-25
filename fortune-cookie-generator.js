@@ -31,7 +31,6 @@ var generateFortuneCookie = function() {
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
 	var randomFortune = fortunesList[Math.floor(Math.random() * fortunesList.length)];
-	//var displayRandomFortune = fortunesList[randomFortune];
 	getFortune.innerHTML = randomFortune;
 	previousFortune.innerHTML = randomFortune;
 

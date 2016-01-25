@@ -18,7 +18,7 @@ html {
 }
 
 .fortune-cookie-saying-wrapper {
-    /*border: 1px solid #666;*/
+ 
     padding: 1em;
     margin: 1em;
 }
@@ -26,13 +26,9 @@ html {
 body {
 	background-image: url("writing.jpg");
 	color: white;
-	/*color: #CF5300;*/
+
 }
 
-/*title, p, h1, h2 {
-	background-color: white; 
-	
-}*/
 
 .fortune-cookie-saying-wrapper{
 	position: relative;
